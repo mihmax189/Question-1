@@ -24,7 +24,7 @@ public:
     // прочитанных данных заданного типа
     if (fread(&type, sizeof(FeatureType), 1, file) != 1) //sizeof(FeatureType))
       return false;
-    short size = 0;
+    size_t size = 0;
     switch (type) {
       case eCircle:
         size = 3;

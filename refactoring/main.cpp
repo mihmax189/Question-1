@@ -41,7 +41,7 @@ public:
       exit(EXIT_FAILURE);
     }
 
-    short size = 0;
+    size_t size = 0;
     switch (type) {
       case eCircle:
         size = 3;
